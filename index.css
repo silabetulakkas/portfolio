@@ -1,0 +1,350 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+.temizle{
+    clear: both;
+}
+
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.ust-icerik{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0 10px 0;
+}
+
+.logo{ float: left; }
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.logo span{ color: #f7c04a; }
+
+#nav{ float: right; }
+
+#nav ul{ list-style: none; }
+
+#nav ul li{
+    float: left;
+    padding: 8px 18px;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #e0e0e0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+#nav ul li a:hover{ 
+    color: #ffffff;
+ }
+
+#kategori-video{
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+
+    padding-top: 110px;   
+    padding-bottom: 40px;
+}
+
+
+
+#kategori-video .bg-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+#kategori-video .video-katman{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+#kategori-video .kategori-icerik{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;        
+}
+
+
+#kategori-video .kategori-kutu{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    padding: 60px 10px;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 18px;
+    background: rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#kategori-video .kategori-kutu span{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#kategori-video .kategori-kutu:hover{
+    background: rgba(0,0,0,0.45);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+}
+
+
+#banner{
+    position: relative;  
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 3;
+}
+
+
+#banner h1{
+    font-size: 58px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+
+#banner p{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    color: #eaeaea;
+    line-height: 28px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+
+#banner .btn{
+    display: inline-block;
+    background: #e72f4c;
+    padding: 16px 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    box-shadow: 0 6px 18px rgba(231, 47, 76, 0.45);
+    transition: 0.65s;
+}
+
+#banner .btn:hover{
+    background: #b67580;
+    box-shadow: 0 12px 28px rgba(231,47,76,0.55);
+}
+
+.kampanya-bolumu{
+    padding: 60px 8%;
+    background: #ffffff;
+}
+
+.kampanya-icerik{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kampanya-icerik h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.kampanya-icerik p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.kampanya-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.kampanya-kutu{
+    background: #f5f5f5;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.kampanya-kutu h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.kampanya-kutu p{
+    font-size: 14px;
+    color: #666;
+}
+
+.kategori-sayfa{
+    padding-top: 100px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 60px;
+    background: #f5f5f5;
+}
+
+.kategori-banner{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.kategori-banner h1{
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.kategori-banner p{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.urun-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.urun-karti{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.urun-karti img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.urun-karti h3{
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.urun-karti p{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.urun-karti .fiyat{
+    font-weight: 700;
+    font-size: 16px;
+    color: #e72f4c;
+}
+
+.urun-karti:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.10);
+}
+
+.cocuk-karti{
+    border-top: 6px solid #ffb347;
+}
+
+
+@media (max-width: 768px){
+
+    .ust-icerik{
+        width: 100%;
+        padding: 10px 16px;
+    }
+
+    #kategori-video .kategori-icerik{
+        padding-top: 220px;
+    }
+
+    #kategori-video .kategori-kutu{
+        width: 80%;
+        margin: 10px auto;
+        padding: 30px 10px;
+    }
+
+    #banner{
+        bottom: 40px; 
+    }
+
+    #banner h1{
+        font-size: 32px;
+    }
+
+    #banner p{
+        font-size: 16px;
+    }
+
+    .kategori-banner h1{
+        font-size: 28px;
+    }
+}
